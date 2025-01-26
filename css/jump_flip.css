@@ -1,0 +1,39 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-color: lightblue;
+}
+.road{
+	width:100%;
+	background: gray;
+	height:3rem;
+	display: flex;
+	justify-content: center;
+	align-items: end;
+}
+.jump {
+    /* Changed the size of the objects */
+	font-size: 5rem;
+	position: absolute;
+	font-size: 20rem;
+	animation: jump 5s linear infinite;
+}
+@keyframes jump {
+	0% {
+		transform: translateX(calc(50vw - 5rem)) translateY(0rem) rotateZ(0deg);
+	}
+	25%{
+		transform: translateX(calc(15vw)) translateY(0rem) rotateZ(0deg);
+	}
+	50%{
+		transform: translateX(0) translateY(-10rem) rotateZ(-180deg);
+	}
+	75%{
+		transform: translateX(calc(-15vw)) translateY(0rem) rotateZ(-360deg);
+	}
+	100%{
+		transform: translateX(calc(-50vw + 5rem)) translateY(0rem) rotateZ(-360deg);
+	}
+}
