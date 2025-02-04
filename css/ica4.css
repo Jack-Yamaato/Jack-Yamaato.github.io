@@ -10,11 +10,12 @@ body {
     color: hotpink;
     font-size: 2em;
     font-family: Georgia, "Times New Roman", Times, serif;
-    border-bottom: 1px solid #375e97;
+    border-bottom: 10px dotted purple;
   }
 
   h2 {
     font-size: 1.5em;
+    font-style: italic;
   }
 
   .job-title {
@@ -29,4 +30,12 @@ body {
 
   a:hover {
     text-decoration: none;
+    /* background-color: green; */
+    color: green;
+  }
+
+  ul{
+    border: 5px solid purple;
+    background-color: #eeeeee;
+    padding: 25px;
   }
