@@ -1,0 +1,92 @@
+
+
+/* Rulesets to be matched up with selectors */
+
+h2{
+  margin: 0%;
+  font-size: 2em;
+  line-height: 1.5em;
+}
+
+p{
+  margin: 0%;
+  line-height: 1.5em;
+}
+
+.card{
+  width: 35em;
+  height: 22em;
+  margin: 5em auto;
+  background-color: red; 
+  border: 0.2em solid black;
+  border-radius: 1.5em;
+}
+
+.card2{
+  width: 35em;
+  height: 22em;
+  margin: 5em auto;
+  background-color: rgb(36, 146, 219); 
+  border: 0.2em solid black;
+  border-radius: 1.5em;
+}
+
+.card header{
+  height: 3em;
+  padding: 1em;
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
+  border-radius: 1.5em 1.5em 0 0;
+}
+
+.card footer{
+  height: 3em;
+  padding: 1em;
+  font-size: 1.5em;
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
+  border-radius: 0 0 1.5em 1.5em;
+}
+
+.card2 header{
+  font-family:'Times New Roman', Times, serif;
+  height: 3em;
+  padding: 1em;
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
+  border-radius: 1.5em 1.5em 0 0;
+}
+
+.card2 footer{
+  font-family:'Times New Roman', Times, serif;
+  height: 3em;
+  padding: 1em;
+  font-size: 1.5em;
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
+  border-radius: 0 0 1.5em 1.5em;
+}
+
+article{
+  height: 12em;
+}
+
+.card article img{
+  float: right;
+  background-color: rgba(0, 0, 0, 0.500);
+  max-height: 100%
+}
+
+.card article p{
+  color: antiquewhite;
+  padding: 1em;
+}
+
+.card2 article img{
+  float: right;
+  background-color: rgba(0, 0, 0, 0.500);
+  max-height: 100%
+}
+
+.card2 article p{
+  font-family:'Times New Roman', Times, serif;
+  color: antiquewhite;
+  padding: 1em;
+}
+
