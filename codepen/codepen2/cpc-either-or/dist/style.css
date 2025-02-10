@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #fff;
+  transition: all 1s;
+  font-family: 'Poppins';
+  overflow: hidden;
+}
+.holder {
+  height: 100px;
+  width: 150px;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+.holder .switch {
+  width: 0;
+  height: 0;
+  display: grid;
+  place-items: center;
+  position: absolute;
+}
+.holder .switch::after {
+  content: '';
+  width: 120px;
+  height: 40px;
+  background-color: #aaa;
+  position: absolute;
+  z-index: 1;
+  border-radius: 6px;
+  border: 2px solid rgba(255,255,255,0.2);
+  transition: background-color 1s;
+}
+.holder .switch::before {
+  content: '';
+  width: 60px;
+  height: 40px;
+  background-color: #009dc4;
+  position: absolute;
+  z-index: 2;
+  box-shadow: 0 0 4px rgba(0,0,0,0.5);
+  transform: translateX(-30px);
+  transition: all 0.5s, border-radius 1s;
+  border-radius: 5px 0 0 5px;
+}
+.holder .switch:checked::before {
+  content: '';
+  width: 60px;
+  height: 40px;
+  background-color: #ff9428;
+  position: absolute;
+  box-shadow: 0 0 4px rgba(0,0,0,0.5);
+  z-index: 2;
+  border-radius: 0 5px 5px 0;
+  transform: translateX(30px);
+}
+.holder .switch:checked::after {
+  background-color: #eee;
+}
+.holder .labels {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  bottom: 3px;
+  width: 130px;
+  align-self: end;
+}
