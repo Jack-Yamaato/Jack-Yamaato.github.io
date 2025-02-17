@@ -1,0 +1,67 @@
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #333;
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 600px;
+}
+
+.heart {
+  width: 120px;
+  height: 120px;
+  position: relative;
+}
+
+.heart {
+  background: inherit;
+  clip-path: polygon(50% 75%, 100% 30%, 75% 0, 50% 20%, 25% 0, 0 30%);
+  transition: transform 0.3s, filter 0.3s;
+  cursor: pointer;
+  filter: hue-rotate(0deg) drop-shadow(1px 1px 5px rgba(255,255,255,1));
+  border-radius: 50%;
+  animation: colorSpin 6s linear infinite, beat 1.2s infinite alternate, sunGlow 3s ease-in-out infinite;
+}
+
+.heart:hover {
+  transform: rotate(15deg) scale(1.2);
+}
+
+.heart:nth-child(1) { background: linear-gradient(to bottom, red, darkred); }
+.heart:nth-child(2) { background: url('https://picsum.photos/100/100?random=1') center/cover; }
+.heart:nth-child(3) { background: linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red); }
+.heart:nth-child(4) { background: url('https://picsum.photos/100/100?random=2') center/cover; }
+.heart:nth-child(5) { background: url('https://picsum.photos/100/100?random=3') center/cover; }
+.heart:nth-child(6) { background: url('https://picsum.photos/100/100?random=4') center/cover; }
+.heart:nth-child(7) { background: linear-gradient(to bottom, pink, purple); }
+.heart:nth-child(8) { background: url('https://picsum.photos/100/100?random=5') center/cover; }
+.heart:nth-child(9) { background: url('https://picsum.photos/100/100?random=6') center/cover; }
+.heart:nth-child(10) { background: linear-gradient(to right, gold, orange); }
+.heart:nth-child(11) { background: url('https://picsum.photos/100/100?random=7') center/cover; }
+.heart:nth-child(12) { background: url('https://picsum.photos/100/100?random=8') center/cover; }
+
+@keyframes beat {
+    to { transform: scale(1.1); }
+}
+
+@keyframes sunGlow {
+    0%, 100% { filter: brightness(1); }
+    50% { filter: brightness(1.4); }
+}
+
+@keyframes colorSpin {
+    to { filter: hue-rotate(360deg); }
+}
