@@ -40,46 +40,43 @@ html{
 }
 
 .bottomBar{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
     height: 4em;
     width: 40em;
     margin: 5em auto;
     background-color: rgba(0, 0, 0, 0.5); 
     border: 0.2em solid black;
     margin-top: 15%;
+    padding: 0 2em;
 }
 
-.timer{
-    position: absolute;
-    height: 4em;
-    width: 10em;
-    /* background-color: rgb(0, 0, 0,0.5);  */
-    /* border: 0.2em solid black; */
-    margin-left: 15%;
-}
-
-.timer p{
-    position: absolute;
+.timer {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 250%;
     color: antiquewhite;
-
-    padding-left: 1em;
-    padding-right: 1.5em;
-    margin: auto;
 }
 
-.eagles{
-    position: absolute;
+.chiefs {
     height: 4em;
     width: 10em;
-    /* margin: 5em auto; */
+    background-image: url(../img/chiefs.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    background-color: rgb(255, 255, 255); 
+    border: 0.2em solid black;
+}
+
+.eagles {
+    height: 4em;
+    width: 10em;
     background-image: url(../img/Eagels.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
     background-color: rgb(255, 255, 255); 
     border: 0.2em solid black;
-    /* margin-top: 15%; */
-    /* margin-left: 10%; */
 }
 
