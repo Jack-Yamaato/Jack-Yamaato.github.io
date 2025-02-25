@@ -1,13 +1,14 @@
 body{
     background-color: khaki;
 }
-#box1{
+.box1{
     width: 25vw;
     height: 20vh;
     background-color: indianred;
+    transition: background-color 2s;
 }
 
-#box1:hover{
+.box1:hover{
     background-color: purple;
 }
 
@@ -17,15 +18,63 @@ body{
     height:20vh;
     position: relative;
     background-color: orangered;
+    display: flex;
+    flex-direction: row;
     
     animation-name: box2move;
     animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#box2 img{
+    max-height: 100%;
+    float: right;
+}
+
+#box2 p{
+    margin: 20px;
+    text-align: center;
+}
+
+#box3{
+    width: 25vw;
+    height: 25vw;
+    
+    position: relative;
+    float: right;
+    background-color: deepskyblue;
+
+    animation-name: box3spin;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#box3 img{
+    max-height: 100%;
 }
 
 @keyframes box2move{
-    0%   {background-color:red; left:0px; top:0px;}
-    25%  {background-color:yellow; left:200px; top:0px;}
-    50%  {background-color:blue; left:200px; top:200px;}
-    75%  {background-color:green; left:0px; top:200px;}
-    100% {background-color:red; left:0px; top:0px;}
+    from{
+        translate: 150vw 0;
+        scale: 200% 1;
+        transform: rotate(-0deg);
+    }
+
+    to{
+        translate: 0 0;
+        scale: 100% 1;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes box3spin {
+    from{
+        transform: rotate(360deg);
+    }
+
+    to{
+        transform: rotate(-0deg);
+    }
 }
