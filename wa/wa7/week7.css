@@ -1,0 +1,77 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(66, 64, 61);
+    font-family: 'Courier New', Courier, monospace;
+}
+nav{
+    height: 50vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:20px;
+    background-color: rgb(85, 218, 188);
+}
+nav a{
+    width:10vw;
+    text-align: center;
+    text-decoration: none;
+    color:rgb(242, 242, 242);
+
+    transition: color 1.5s;
+    transition: background-color 1.5s;
+}
+
+nav a:hover{
+    color: black;
+    background-color: rgb(242, 242, 242);
+}
+
+h1{
+    color: rgb(44, 112, 164);
+}
+
+
+img{
+    width:50vw;
+    height: 50vh;
+}
+
+#red-ball{
+    background-color: crimson;
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+    position: absolute;
+    left:5vw;
+    top:0;
+
+    animation-name: red-ball-move;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes red-ball-move {
+    from{
+        translate: 0 0;
+    }
+
+    25%{
+        translate: 30vw 0vw;
+    }
+
+    50%{
+        translate: 30vw 30vw;
+    }
+
+    75%{
+        translate: 0vw 30vw;
+    }
+
+    to{
+        translate: 0 0;
+    }
+
+}
