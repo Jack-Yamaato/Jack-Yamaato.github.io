@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap" rel="stylesheet">
+
+    <title>Silly story generator</title>
+
+    <style>
+      body {
+        font-family: 'Birthstone', sans-serif;
+        width: 350px;
+
+        background-image: url(./AdobeStock_421852062_Preview.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        color: white;
+      }
+
+      label {
+        font-weight: bold;
+      }
+
+      .grid{
+        width: 1000px;
+        display: grid;
+
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        text-align: center;
+        position: absolute;
+
+        padding: 10px;
+        margin-left: 150px;
+        gap: 20px;
+      }
+
+      div {
+        padding: 20px;
+      }
+
+      input[type="text"] {
+        padding: 5px;
+        width: 150px;
+      }
+
+      p {
+        background: #636057;
+        color: #5e2612;
+        padding: 10px;
+        visibility: hidden;
+
+        font-size: x-large;
+
+        width: 400px;
+        border-radius: 4px;
+
+        grid-column: 2;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <section class="grid">
+      <div>
+        <label for="customname">Enter custom name:</label>
+        <input id="customname" type="text" placeholder="" />
+      </div>
+
+      <div>
+        <label for="us">US</label
+        ><input id="us" type="radio" name="ukus" value="us" checked />
+        <label for="uk">UK</label
+        ><input id="uk" type="radio" name="ukus" value="uk" />
+      </div>
+
+      <div>
+        <button class="randomize">Generate random story</button>
+      </div>
+
+      <!-- Thanks a lot to Willy Aguirre for his help with the code for this assessment -->
+      <p class="story"></p>
+    </section>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
