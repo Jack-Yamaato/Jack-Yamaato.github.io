@@ -1,11 +1,14 @@
 h1 {
   font-family: helvetica, arial, sans-serif;
   text-align: center;
+  color: aliceblue;
 }
 
 body {
   width: 640px;
   margin: 0 auto;
+
+  background-image: linear-gradient(to bottom,#a82833, #faff7c);
 }
 
 .full-img {
@@ -13,6 +16,12 @@ body {
   display: block;
   width: 640px;
   height: 480px;
+  display: flex;
+}
+
+.displayed-img{
+  object-fit: contain;
+  width: 100%;
 }
 
 .overlay {
@@ -33,6 +42,10 @@ button {
   cursor: pointer;
   top: 2px;
   left: 2px;
+}
+
+.thumb-bar{
+  display: flex;
 }
 
 .thumb-bar img {

@@ -5,10 +5,10 @@ const btn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
 
 /* Declaring the array of image filenames */
-const photoArr = ["images/pic1.jpg", "images/pic2.jpg", "images/pic3.jpg", "images/pic4.jpg", "images/pic5.jpg"];
+const photoArr = ["images/FLCLpic1.jpg", "images/FLCLpic2.png", "images/FLCLpic3.jpg", "images/FLCLpic4.jpg", "images/FLCLpic5.jpg"];
 
 /* Declaring the alternative text for each image file */
-const altTxtArr = ["Blue eyes", "White rock", "Lavender flower", "Mural", "Butterfly"];
+const altTxtArr = ["Sound Track Cover", "Stand Off", "Character Spread", "Manga Cover", "Characters Proportions"];
 
 /* Looping through images */
 for(let i = 0; i < 5; i++){
