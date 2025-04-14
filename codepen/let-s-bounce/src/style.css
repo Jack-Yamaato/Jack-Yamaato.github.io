@@ -1,0 +1,37 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	color: hsl(32 35% 21%);
+	background: hsl(49 72% 89%);
+	min-block-size: 100svb;
+	display: grid;
+	place-items: center;
+	font-family: system-ui;
+}
+
+*::selection {
+	background: hsl(42 48% 80%);
+}
+
+div > * + * {
+	margin-block-start: 0.5rem;
+}
+
+label {
+	display: block;
+	font-weight: 700;
+}
+
+label > input {
+	margin-block-start: 0.5rem;
+}
+
+input {
+	display: block;
+	accent-color: hsl(30 26% 32%);
+	inline-size: 100%;
+}
