@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #e0e0e0;
+    overflow-x: hidden;
+}
+
+#game {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+#player-cards, #dealer-cards {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+#player-cards img, #dealer-cards img {
+    width: 80px;
+    height: auto;
+    margin: 0 5px;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 100;
+    display: none;
+}
+
