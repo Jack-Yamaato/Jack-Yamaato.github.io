@@ -6,35 +6,52 @@
     <link rel="stylesheet" href="./final.css">
 </head>
 <body>
+    
     <div id="overlay"></div>
 
-    <div id="game">
-        <h1>Phone Number Blackjack</h1>
-        <div id="phone-progress">
-            <label>Your Phone Input:</label>
-            <input type="text" id="phone-number" readonly>
-        </div>
-        <div id="bet-info">
-            <p>Current Available Numbers: <span id="number-count">1</span></p>
-            <button id="bet-button">Bet and Play</button>
-        </div>
-
-        <div id="player-area">
-            <h2>Your Hand</h2>
-            <div id="player-cards"></div>
-            <p id="player-score">Score: 0</p>
-            <button id="hit-button">Hit</button>
-            <button id="stand-button">Stand</button>
-        </div>
-
-        <div id="dealer-area">
-            <h2>Dealer's Hand</h2>
-            <div id="dealer-cards"></div>
-            <p id="dealer-score">Score: 0</p>
-        </div>
-
-        <p id="message"></p>
+  <div id="rules-popup" class="modal">
+    <div class="modal-content">
+      <h2>Welcome to Phone Blackjack!</h2>
+      <p>
+        The goal is to win hands of blackjack to earn digits of your phone number.
+        You start with 1 digit. Win a hand to double it. Lose a hand and you lose half.
+        <br /><br />
+        Once you reach 10 digits, you can submit your full number!
+      </p>
+      <button onclick="closeRules()">Got it!</button>
     </div>
+  </div>
+
+  <div id="game">
+    <h1>Phone Number Blackjack</h1>
+
+    <div id="phone-progress">
+      <label>Enter your number:</label>
+      <input type="text" id="phone-number" maxlength="10" />
+      <button id="submit-button">Submit</button>
+    </div>
+
+    <div id="bet-info">
+      <p>Digits Available: <span id="number-count">1</span></p>
+      <button id="bet-button">Bet and Play</button>
+    </div>
+
+    <div id="player-area">
+      <h2>Your Hand</h2>
+      <div id="player-cards"></div>
+      <p id="player-score">Score: 0</p>
+      <button id="hit-button">Hit</button>
+      <button id="stand-button">Stand</button>
+    </div>
+
+    <div id="dealer-area">
+      <h2>Dealer's Hand</h2>
+      <div id="dealer-cards"></div>
+      <p id="dealer-score">Score: 0</p>
+    </div>
+
+    <p id="message"></p>
+  </div>
 
     <script src="./final.js"></script>
 </body>
